@@ -1,0 +1,199 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0-oas3
+  title: ServiceWeb
+  description: Structure de base d'un api créé dans le cadre du cours Services Web H2022
+servers:
+  - url: http://localhost/ServiceWeb/
+paths:
+  /:
+    get:
+      tags:
+        - Général
+      summary: Message de bienvenue
+      responses:
+        '200':
+          description: Affiche un message de bienvenue
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  message:
+                    type: string
+                example:
+                  success: true
+                  message: ExamenFinal API
+  /film:
+    post:
+      tags:
+        - Film
+      summary: Création d'un film.
+      requestBody:
+        description: Les informations du film à créer
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: int
+                nom:
+                  type: string
+                duree:
+                  type: int
+                dateSortie:
+                  type: date
+              example:
+                id: 1
+                nom: Titanic
+                duree: 194
+                dateSortie: 1997/12/07
+                urlImage: https://i.kym-cdn.com/photos/images/newsfeed/000/041/494/1241026091_youve_been_rickrolled.gif
+                
+
+      responses:
+        '201':
+          description: Le id du film à été créé
+        '400':
+          description: Mauvaise requête
+        '401':
+          description: Requête non autorisé
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user_id:
+                    type: integer
+                example:
+                  id: 1
+    get:
+      tags:
+        - Film
+      summary: Liste l'ensemble des films.
+      responses:
+        '200':
+          description: succès la liste de films est retourné
+        '401':
+          description: Requête non autorisé
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  film_id:
+                    type: integer
+                example:
+                - id: 1
+                  nom: Titanic
+                  duree: 194
+                  dateSortie: 1997/12/07
+                  urlImage: https://i.kym-cdn.com/photos/images/newsfeed/000/041/494/1241026091_youve_been_rickrolled.gif
+                - id: 2
+                  nom: Avatar
+                  duree: 162
+                  dateSortie: 2009/12/18
+                  urlImage: https://i.kym-cdn.com/photos/images/newsfeed/000/041/494/1241026091_youve_been_rickrolled.gif
+  /film/{id}:
+    get:
+      tags:
+        - Film
+      summary: Informations d'un film.
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Identifiant du film
+      responses:
+        '200':
+          description: Les informations du film demandées
+        '401':
+          description: Requête non autorisé
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  film_id:
+                    type: integer
+                example:
+                  - id: 1
+                    nom: Titanic
+                    duree: 194
+                    dateSortie: 1997/12/07
+                    urlImage: https://i.kym-cdn.com/photos/images/newsfeed/000/041/494/1241026091_youve_been_rickrolled.gif
+    delete:
+      tags:
+        - Film
+      summary: Supprime un film.
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Identifiant du film
+      responses:
+        '200':
+          description: Un booléen représentant la réussite de l'opération
+        '400':
+          description: Mauvaise requête
+        '401':
+          description: Requête non autorisé
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  film_id:
+                    type: integer
+                example:
+                  - result: true
+    put:
+      tags:
+        - Film
+      summary: Modification d'un film.
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+          required: true
+          description: Identifiant du film
+      requestBody:
+        description: Les informations du film à modifier
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                film_id:
+                  type: integer
+              example:
+                - id: 1
+                  nom: Titanic 2
+                  duree: 194
+                  dateSortie: 2023/12/07
+      responses:
+        '200':
+          description: Un booléen représentant la réussite de l'opération
+        '400':
+          description: Mauvaise requête
+        '401':
+          description: Requête non autorisé
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user_id:
+                    type: integer
+                example:
+                  - result: true

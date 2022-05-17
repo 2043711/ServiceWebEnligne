@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for D:\Program Files\Ampps\www\libapi\src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="_css/style.css" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">D:\Program Files\Ampps\www\libapi\src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Action/Docs/SwaggerUiAction.php.html#11">App\Action\Docs\SwaggerUiAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserDeletorRepository.php.html#10">App\Domain\User\Repository\UserDeletorRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/AuthMiddleware.php.html#10">App\Middleware\AuthMiddleware</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/LoggerFactory.php.html#14">App\Factory\LoggerFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/ValidationException.php.html#8">App\Exception\ValidationException</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserUpdator.php.html#11">App\Domain\User\Service\UserUpdator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserListor.php.html#11">App\Domain\User\Service\UserListor</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserDeletor.php.html#11">App\Domain\User\Service\UserDeletor</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserCreator.php.html#11">App\Domain\User\Service\UserCreator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserUpdatorRepository.php.html#10">App\Domain\User\Repository\UserUpdatorRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserListorRepository.php.html#10">App\Domain\User\Repository\UserListorRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserCreatorRepository.php.html#10">App\Domain\User\Repository\UserCreatorRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/HelloAction.php.html#8">App\Action\HelloAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Service/KeyGettor.php.html#12">App\Domain\Key\Service\KeyGettor</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Repository/KeyGettorRepository.php.html#7">App\Domain\Key\Repository\KeyGettorRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserUpdateAction.php.html#9">App\Action\UserUpdateAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserListAction.php.html#9">App\Action\UserListAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserDeleteAction.php.html#10">App\Action\UserDeleteAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserCreateAction.php.html#9">App\Action\UserCreateAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/KeyListorAction.php.html#9">App\Action\KeyListorAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/KeyAction.php.html#9">App\Action\KeyAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/HomeAction.php.html#8">App\Action\HomeAction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/CorsMiddleware.php.html#14">App\Middleware\CorsMiddleware</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Domain/User/Repository/UserListorRepository.php.html#10">App\Domain\User\Repository\UserListorRepository</a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="Factory/LoggerFactory.php.html#14">App\Factory\LoggerFactory</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Domain/Key/Repository/KeyGettorRepository.php.html#7">App\Domain\Key\Repository\KeyGettorRepository</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Domain/User/Service/UserCreator.php.html#11">App\Domain\User\Service\UserCreator</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Domain/User/Service/UserUpdator.php.html#11">App\Domain\User\Service\UserUpdator</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Domain/Key/Service/KeyGettor.php.html#12">App\Domain\Key\Service\KeyGettor</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Middleware/AuthMiddleware.php.html#10">App\Middleware\AuthMiddleware</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Action/UserDeleteAction.php.html#10">App\Action\UserDeleteAction</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Action/UserListAction.php.html#9">App\Action\UserListAction</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Action/UserUpdateAction.php.html#9">App\Action\UserUpdateAction</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Middleware/CorsMiddleware.php.html#14">App\Middleware\CorsMiddleware</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Action/Docs/SwaggerUiAction.php.html#18"><abbr title="App\Action\Docs\SwaggerUiAction::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserListor.php.html#43"><abbr title="App\Domain\User\Service\UserListor::listUser">listUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserListorRepository.php.html#141"><abbr title="App\Domain\User\Repository\UserListorRepository::listUser">listUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserUpdatorRepository.php.html#22"><abbr title="App\Domain\User\Repository\UserUpdatorRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserUpdatorRepository.php.html#34"><abbr title="App\Domain\User\Repository\UserUpdatorRepository::updateUser">updateUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserCreator.php.html#23"><abbr title="App\Domain\User\Service\UserCreator::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserCreator.php.html#35"><abbr title="App\Domain\User\Service\UserCreator::createUser">createUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserCreator.php.html#57"><abbr title="App\Domain\User\Service\UserCreator::validateNewUser">validateNewUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserDeletor.php.html#23"><abbr title="App\Domain\User\Service\UserDeletor::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserDeletor.php.html#33"><abbr title="App\Domain\User\Service\UserDeletor::deleteUser">deleteUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserListor.php.html#23"><abbr title="App\Domain\User\Service\UserListor::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserListor.php.html#35"><abbr title="App\Domain\User\Service\UserListor::listAllUsers">listAllUsers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserUpdator.php.html#23"><abbr title="App\Domain\User\Service\UserUpdator::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserListorRepository.php.html#22"><abbr title="App\Domain\User\Repository\UserListorRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserUpdator.php.html#35"><abbr title="App\Domain\User\Service\UserUpdator::updateUser">updateUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Service/UserUpdator.php.html#57"><abbr title="App\Domain\User\Service\UserUpdator::validateUpdateUser">validateUpdateUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/ValidationException.php.html#12"><abbr title="App\Exception\ValidationException::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/ValidationException.php.html#23"><abbr title="App\Exception\ValidationException::getErrors">getErrors</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/LoggerFactory.php.html#41"><abbr title="App\Factory\LoggerFactory::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/LoggerFactory.php.html#59"><abbr title="App\Factory\LoggerFactory::createLogger">createLogger</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/LoggerFactory.php.html#84"><abbr title="App\Factory\LoggerFactory::addFileHandler">addFileHandler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/LoggerFactory.php.html#105"><abbr title="App\Factory\LoggerFactory::addConsoleHandler">addConsoleHandler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/AuthMiddleware.php.html#23"><abbr title="App\Middleware\AuthMiddleware::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/AuthMiddleware.php.html#28"><abbr title="App\Middleware\AuthMiddleware::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserListorRepository.php.html#34"><abbr title="App\Domain\User\Repository\UserListorRepository::listAllUsers">listAllUsers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserDeletorRepository.php.html#32"><abbr title="App\Domain\User\Repository\UserDeletorRepository::deleteUser">deleteUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/Docs/SwaggerUiAction.php.html#31"><abbr title="App\Action\Docs\SwaggerUiAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserListAction.php.html#13"><abbr title="App\Action\UserListAction::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/HelloAction.php.html#10"><abbr title="App\Action\HelloAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/HomeAction.php.html#10"><abbr title="App\Action\HomeAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/KeyAction.php.html#13"><abbr title="App\Action\KeyAction::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/KeyAction.php.html#18"><abbr title="App\Action\KeyAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/KeyListorAction.php.html#13"><abbr title="App\Action\KeyListorAction::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/KeyListorAction.php.html#18"><abbr title="App\Action\KeyListorAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserCreateAction.php.html#13"><abbr title="App\Action\UserCreateAction::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserCreateAction.php.html#18"><abbr title="App\Action\UserCreateAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserDeleteAction.php.html#14"><abbr title="App\Action\UserDeleteAction::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserDeleteAction.php.html#19"><abbr title="App\Action\UserDeleteAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserListAction.php.html#18"><abbr title="App\Action\UserListAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserDeletorRepository.php.html#22"><abbr title="App\Domain\User\Repository\UserDeletorRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserUpdateAction.php.html#13"><abbr title="App\Action\UserUpdateAction::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Action/UserUpdateAction.php.html#18"><abbr title="App\Action\UserUpdateAction::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Repository/KeyGettorRepository.php.html#18"><abbr title="App\Domain\Key\Repository\KeyGettorRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Repository/KeyGettorRepository.php.html#30"><abbr title="App\Domain\Key\Repository\KeyGettorRepository::getKey">getKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Repository/KeyGettorRepository.php.html#53"><abbr title="App\Domain\Key\Repository\KeyGettorRepository::validateKey">validateKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Repository/KeyGettorRepository.php.html#70"><abbr title="App\Domain\Key\Repository\KeyGettorRepository::listKeys">listKeys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Service/KeyGettor.php.html#24"><abbr title="App\Domain\Key\Service\KeyGettor::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Service/KeyGettor.php.html#36"><abbr title="App\Domain\Key\Service\KeyGettor::getKey">getKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Key/Service/KeyGettor.php.html#47"><abbr title="App\Domain\Key\Service\KeyGettor::listKeys">listKeys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserCreatorRepository.php.html#22"><abbr title="App\Domain\User\Repository\UserCreatorRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/User/Repository/UserCreatorRepository.php.html#34"><abbr title="App\Domain\User\Repository\UserCreatorRepository::insertUser">insertUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/CorsMiddleware.php.html#24"><abbr title="App\Middleware\CorsMiddleware::process">process</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Domain/User/Repository/UserListorRepository.php.html#34"><abbr title="App\Domain\User\Repository\UserListorRepository::listAllUsers">listAllUsers</abbr></a></td><td class="text-right">600</td></tr>
+       <tr><td><a href="Domain/User/Service/UserCreator.php.html#57"><abbr title="App\Domain\User\Service\UserCreator::validateNewUser">validateNewUser</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Domain/User/Service/UserUpdator.php.html#57"><abbr title="App\Domain\User\Service\UserUpdator::validateUpdateUser">validateUpdateUser</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Factory/LoggerFactory.php.html#59"><abbr title="App\Factory\LoggerFactory::createLogger">createLogger</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Domain/Key/Repository/KeyGettorRepository.php.html#30"><abbr title="App\Domain\Key\Repository\KeyGettorRepository::getKey">getKey</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Middleware/AuthMiddleware.php.html#28"><abbr title="App\Middleware\AuthMiddleware::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Action/UserDeleteAction.php.html#19"><abbr title="App\Action\UserDeleteAction::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Action/UserListAction.php.html#18"><abbr title="App\Action\UserListAction::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Action/UserUpdateAction.php.html#18"><abbr title="App\Action\UserUpdateAction::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Domain/Key/Repository/KeyGettorRepository.php.html#53"><abbr title="App\Domain\Key\Repository\KeyGettorRepository::validateKey">validateKey</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Domain/Key/Service/KeyGettor.php.html#36"><abbr title="App\Domain\Key\Service\KeyGettor::getKey">getKey</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/LoggerFactory.php.html#41"><abbr title="App\Factory\LoggerFactory::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Middleware/CorsMiddleware.php.html#24"><abbr title="App\Middleware\CorsMiddleware::process">process</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.10</a> using <a href="https://secure.php.net/" target="_top">PHP 7.4.27</a> and <a href="https://phpunit.de/">PHPUnit 9.5.14</a> at Mon Mar 28 14:41:23 UTC 2022.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js" type="text/javascript"></script>
+  <script src="_js/d3.min.js" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([23,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([52,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Action\/Docs\/SwaggerUiAction.php.html#11\">App\\Action\\Docs\\SwaggerUiAction<\/a>"],[0,1,"<a href=\"Action\/HelloAction.php.html#8\">App\\Action\\HelloAction<\/a>"],[0,1,"<a href=\"Action\/HomeAction.php.html#8\">App\\Action\\HomeAction<\/a>"],[0,2,"<a href=\"Action\/KeyAction.php.html#9\">App\\Action\\KeyAction<\/a>"],[0,2,"<a href=\"Action\/KeyListorAction.php.html#9\">App\\Action\\KeyListorAction<\/a>"],[0,2,"<a href=\"Action\/UserCreateAction.php.html#9\">App\\Action\\UserCreateAction<\/a>"],[0,3,"<a href=\"Action\/UserDeleteAction.php.html#10\">App\\Action\\UserDeleteAction<\/a>"],[0,3,"<a href=\"Action\/UserListAction.php.html#9\">App\\Action\\UserListAction<\/a>"],[0,3,"<a href=\"Action\/UserUpdateAction.php.html#9\">App\\Action\\UserUpdateAction<\/a>"],[0,7,"<a href=\"Domain\/Key\/Repository\/KeyGettorRepository.php.html#7\">App\\Domain\\Key\\Repository\\KeyGettorRepository<\/a>"],[0,4,"<a href=\"Domain\/Key\/Service\/KeyGettor.php.html#12\">App\\Domain\\Key\\Service\\KeyGettor<\/a>"],[0,2,"<a href=\"Domain\/User\/Repository\/UserCreatorRepository.php.html#10\">App\\Domain\\User\\Repository\\UserCreatorRepository<\/a>"],[0,2,"<a href=\"Domain\/User\/Repository\/UserDeletorRepository.php.html#10\">App\\Domain\\User\\Repository\\UserDeletorRepository<\/a>"],[0,26,"<a href=\"Domain\/User\/Repository\/UserListorRepository.php.html#10\">App\\Domain\\User\\Repository\\UserListorRepository<\/a>"],[0,2,"<a href=\"Domain\/User\/Repository\/UserUpdatorRepository.php.html#10\">App\\Domain\\User\\Repository\\UserUpdatorRepository<\/a>"],[0,7,"<a href=\"Domain\/User\/Service\/UserCreator.php.html#11\">App\\Domain\\User\\Service\\UserCreator<\/a>"],[0,2,"<a href=\"Domain\/User\/Service\/UserDeletor.php.html#11\">App\\Domain\\User\\Service\\UserDeletor<\/a>"],[0,3,"<a href=\"Domain\/User\/Service\/UserListor.php.html#11\">App\\Domain\\User\\Service\\UserListor<\/a>"],[0,7,"<a href=\"Domain\/User\/Service\/UserUpdator.php.html#11\">App\\Domain\\User\\Service\\UserUpdator<\/a>"],[0,2,"<a href=\"Exception\/ValidationException.php.html#8\">App\\Exception\\ValidationException<\/a>"],[0,8,"<a href=\"Factory\/LoggerFactory.php.html#14\">App\\Factory\\LoggerFactory<\/a>"],[0,4,"<a href=\"Middleware\/AuthMiddleware.php.html#10\">App\\Middleware\\AuthMiddleware<\/a>"],[0,2,"<a href=\"Middleware\/CorsMiddleware.php.html#14\">App\\Middleware\\CorsMiddleware<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Action\/Docs\/SwaggerUiAction.php.html#18\">App\\Action\\Docs\\SwaggerUiAction::__construct<\/a>"],[0,1,"<a href=\"Action\/Docs\/SwaggerUiAction.php.html#31\">App\\Action\\Docs\\SwaggerUiAction::__invoke<\/a>"],[0,1,"<a href=\"Action\/HelloAction.php.html#10\">App\\Action\\HelloAction::__invoke<\/a>"],[0,1,"<a href=\"Action\/HomeAction.php.html#10\">App\\Action\\HomeAction::__invoke<\/a>"],[0,1,"<a href=\"Action\/KeyAction.php.html#13\">App\\Action\\KeyAction::__construct<\/a>"],[0,1,"<a href=\"Action\/KeyAction.php.html#18\">App\\Action\\KeyAction::__invoke<\/a>"],[0,1,"<a href=\"Action\/KeyListorAction.php.html#13\">App\\Action\\KeyListorAction::__construct<\/a>"],[0,1,"<a href=\"Action\/KeyListorAction.php.html#18\">App\\Action\\KeyListorAction::__invoke<\/a>"],[0,1,"<a href=\"Action\/UserCreateAction.php.html#13\">App\\Action\\UserCreateAction::__construct<\/a>"],[0,1,"<a href=\"Action\/UserCreateAction.php.html#18\">App\\Action\\UserCreateAction::__invoke<\/a>"],[0,1,"<a href=\"Action\/UserDeleteAction.php.html#14\">App\\Action\\UserDeleteAction::__construct<\/a>"],[0,2,"<a href=\"Action\/UserDeleteAction.php.html#19\">App\\Action\\UserDeleteAction::__invoke<\/a>"],[0,1,"<a href=\"Action\/UserListAction.php.html#13\">App\\Action\\UserListAction::__construct<\/a>"],[0,2,"<a href=\"Action\/UserListAction.php.html#18\">App\\Action\\UserListAction::__invoke<\/a>"],[0,1,"<a href=\"Action\/UserUpdateAction.php.html#13\">App\\Action\\UserUpdateAction::__construct<\/a>"],[0,2,"<a href=\"Action\/UserUpdateAction.php.html#18\">App\\Action\\UserUpdateAction::__invoke<\/a>"],[0,1,"<a href=\"Domain\/Key\/Repository\/KeyGettorRepository.php.html#18\">App\\Domain\\Key\\Repository\\KeyGettorRepository::__construct<\/a>"],[0,3,"<a href=\"Domain\/Key\/Repository\/KeyGettorRepository.php.html#30\">App\\Domain\\Key\\Repository\\KeyGettorRepository::getKey<\/a>"],[0,2,"<a href=\"Domain\/Key\/Repository\/KeyGettorRepository.php.html#53\">App\\Domain\\Key\\Repository\\KeyGettorRepository::validateKey<\/a>"],[0,1,"<a href=\"Domain\/Key\/Repository\/KeyGettorRepository.php.html#70\">App\\Domain\\Key\\Repository\\KeyGettorRepository::listKeys<\/a>"],[0,1,"<a href=\"Domain\/Key\/Service\/KeyGettor.php.html#24\">App\\Domain\\Key\\Service\\KeyGettor::__construct<\/a>"],[0,2,"<a href=\"Domain\/Key\/Service\/KeyGettor.php.html#36\">App\\Domain\\Key\\Service\\KeyGettor::getKey<\/a>"],[0,1,"<a href=\"Domain\/Key\/Service\/KeyGettor.php.html#47\">App\\Domain\\Key\\Service\\KeyGettor::listKeys<\/a>"],[0,1,"<a href=\"Domain\/User\/Repository\/UserCreatorRepository.php.html#22\">App\\Domain\\User\\Repository\\UserCreatorRepository::__construct<\/a>"],[0,1,"<a href=\"Domain\/User\/Repository\/UserCreatorRepository.php.html#34\">App\\Domain\\User\\Repository\\UserCreatorRepository::insertUser<\/a>"],[0,1,"<a href=\"Domain\/User\/Repository\/UserDeletorRepository.php.html#22\">App\\Domain\\User\\Repository\\UserDeletorRepository::__construct<\/a>"],[0,1,"<a href=\"Domain\/User\/Repository\/UserDeletorRepository.php.html#32\">App\\Domain\\User\\Repository\\UserDeletorRepository::deleteUser<\/a>"],[0,1,"<a href=\"Domain\/User\/Repository\/UserListorRepository.php.html#22\">App\\Domain\\User\\Repository\\UserListorRepository::__construct<\/a>"],[0,24,"<a href=\"Domain\/User\/Repository\/UserListorRepository.php.html#34\">App\\Domain\\User\\Repository\\UserListorRepository::listAllUsers<\/a>"],[0,1,"<a href=\"Domain\/User\/Repository\/UserListorRepository.php.html#141\">App\\Domain\\User\\Repository\\UserListorRepository::listUser<\/a>"],[0,1,"<a href=\"Domain\/User\/Repository\/UserUpdatorRepository.php.html#22\">App\\Domain\\User\\Repository\\UserUpdatorRepository::__construct<\/a>"],[0,1,"<a href=\"Domain\/User\/Repository\/UserUpdatorRepository.php.html#34\">App\\Domain\\User\\Repository\\UserUpdatorRepository::updateUser<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserCreator.php.html#23\">App\\Domain\\User\\Service\\UserCreator::__construct<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserCreator.php.html#35\">App\\Domain\\User\\Service\\UserCreator::createUser<\/a>"],[0,5,"<a href=\"Domain\/User\/Service\/UserCreator.php.html#57\">App\\Domain\\User\\Service\\UserCreator::validateNewUser<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserDeletor.php.html#23\">App\\Domain\\User\\Service\\UserDeletor::__construct<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserDeletor.php.html#33\">App\\Domain\\User\\Service\\UserDeletor::deleteUser<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserListor.php.html#23\">App\\Domain\\User\\Service\\UserListor::__construct<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserListor.php.html#35\">App\\Domain\\User\\Service\\UserListor::listAllUsers<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserListor.php.html#43\">App\\Domain\\User\\Service\\UserListor::listUser<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserUpdator.php.html#23\">App\\Domain\\User\\Service\\UserUpdator::__construct<\/a>"],[0,1,"<a href=\"Domain\/User\/Service\/UserUpdator.php.html#35\">App\\Domain\\User\\Service\\UserUpdator::updateUser<\/a>"],[0,5,"<a href=\"Domain\/User\/Service\/UserUpdator.php.html#57\">App\\Domain\\User\\Service\\UserUpdator::validateUpdateUser<\/a>"],[0,1,"<a href=\"Exception\/ValidationException.php.html#12\">App\\Exception\\ValidationException::__construct<\/a>"],[0,1,"<a href=\"Exception\/ValidationException.php.html#23\">App\\Exception\\ValidationException::getErrors<\/a>"],[0,2,"<a href=\"Factory\/LoggerFactory.php.html#41\">App\\Factory\\LoggerFactory::__construct<\/a>"],[0,4,"<a href=\"Factory\/LoggerFactory.php.html#59\">App\\Factory\\LoggerFactory::createLogger<\/a>"],[0,1,"<a href=\"Factory\/LoggerFactory.php.html#84\">App\\Factory\\LoggerFactory::addFileHandler<\/a>"],[0,1,"<a href=\"Factory\/LoggerFactory.php.html#105\">App\\Factory\\LoggerFactory::addConsoleHandler<\/a>"],[0,1,"<a href=\"Middleware\/AuthMiddleware.php.html#23\">App\\Middleware\\AuthMiddleware::__construct<\/a>"],[0,3,"<a href=\"Middleware\/AuthMiddleware.php.html#28\">App\\Middleware\\AuthMiddleware::__invoke<\/a>"],[0,2,"<a href=\"Middleware\/CorsMiddleware.php.html#24\">App\\Middleware\\CorsMiddleware::process<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
